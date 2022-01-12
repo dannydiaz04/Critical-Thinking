@@ -1,5 +1,5 @@
 '''
-Making use of the A* algorithm to find the shortest path from a beginning point to an end-goal point in a maze. 
+Making use of the A* search algorithm to find the shortest path from a beginning point to an end-goal point in a maze. 
 This program has the user define the size of the maze and the starting and end points. The obstacles are represented by 1's. 0's are permitted positions to move through. Diagonal movement is allowed. 
 '''
 
@@ -12,7 +12,7 @@ class Node():
         self.position = position
         self.parent = parent
 
-        # create h,g, and f values to calculate path costs
+        # create h,g, and f values to calculate path 'costs'
         self.g = 0
         self.h = 0
         self.f = 0
@@ -142,8 +142,8 @@ def astar(maze,start,end):
 def main():
     
     # Create maze
-    inputRows = int(input("\nPlease enter the amount of rows you'd like for the maze: ")) 
-    inputColumns = int(input("Please enter the amount of columns you'd like for the maze: ")) 
+    inputRows = abs(int(input("\nPlease enter the amount of rows you'd like for the maze: "))) 
+    inputColumns = abs(int(input("Please enter the amount of columns you'd like for the maze: ")))
    
     mazeInput = []
     for i in range(inputRows):
