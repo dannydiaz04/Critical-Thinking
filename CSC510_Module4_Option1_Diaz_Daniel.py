@@ -133,8 +133,6 @@ def astar(maze,start,end):
 
 
 
-
-
 # Have the user define the dimensions of the maze. Also have user define start and end coordinates
 
 # The obstacles are randomly generated making use of the 'random' library.
